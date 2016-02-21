@@ -11,7 +11,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}));
 
 //GET for coach
-app.get('/get', function(req,res){
+app.get('/', function(req,res){
 	
 	//message console
 	console.log("I received a GET request.");
@@ -19,7 +19,7 @@ app.get('/get', function(req,res){
 });
 
 //POST for coach
-app.post('/post', function(req,res){
+app.post('/', function(req,res){
 	
 	
 	//message console
@@ -29,5 +29,7 @@ app.post('/post', function(req,res){
 	
 });
 
-//listen on port 3000
-app.listen(3500)
+
+//listen on port
+console.log("Listening on port 3100...");
+app.listen(3100);
