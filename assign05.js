@@ -16,6 +16,10 @@ app.get('/', function(req,res){
 	//message console
 	console.log("I received a GET request.");
 	
+	//res.writeHead(200, { "Content-Type": "text/plain" });
+	//res.end("hello! It's me.");
+	res.send("This is what I sent!!!");
+	
 });
 
 //POST for coach
